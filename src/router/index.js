@@ -23,16 +23,22 @@ const routes = [
         component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
       },
       {
-        path: '/about',
-        name: 'About',
+        path: '/todo',
+        name: 'Todo',
 
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        component: () => import(/* webpackChunkName: "about" */ '../views/Todo.vue'),
       },
       {
-        path: '/help',
-        name: 'Help',
+        path: '/shoppingcart',
+        name: 'ShoppingCart',
 
-        component: () => import(/* webpackChunkName: "about" */ '../views/Help.vue'),
+        component: () => import(/* webpackChunkName: "about" */ '../views/ShoppingCart.vue'),
+      },
+      {
+        path: '/list',
+        name: 'List',
+
+        component: () => import(/* webpackChunkName: "about" */ '../views/List.vue'),
       },
     ],
   },
